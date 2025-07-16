@@ -1,0 +1,193 @@
+/* === Reset & Base === */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1c1c1c;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
+a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* === Layout Container === */
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* === Mobile-first Navbar (default) === */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #1c1c1c;
+  border-bottom: 1px solid #333;
+  padding: 1rem;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 4px;
+  flex-basis: 100%;
+}
+
+.nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.search-signup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
+  margin-top: 10px;
+  justify-content: space-between;
+}
+
+.search {
+  padding: 8px;
+  background: #2c2c2c;
+  border: 1px solid #555;
+  color: white;
+  flex: 1;
+}
+
+.signup-btn {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #1d4ed8;
+}
+
+/* === Login Form Section === */
+.login-section {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.login-form {
+  background: #2c2c2c;
+  padding: 30px;
+  border-radius: 8px;
+  max-width: 400px;
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.login-form input {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  background: #3a3a3a;
+  border: 1px solid #666;
+  color: white;
+  border-radius: 4px;
+}
+
+.login-btn {
+  padding: 12px;
+  background: #444;
+  border: none;
+  color: white;
+  width: 100%;
+  margin-bottom: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.login-btn:hover {
+  background-color: #555;
+}
+
+.login-btn.secondary {
+  background: #555;
+}
+
+.login-btn.secondary:hover {
+  background: #666;
+}
+
+.form-title {
+  text-align: center;
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+}
+
+.form-link {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: center;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.signup-prompt {
+  text-align: center;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.signup-link {
+  color: white;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* === Footer === */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  border-top: 1px solid #333;
+}
+
+/* === Responsive for Desktop (≥768px) === */
+@media (min-width: 768px) {
+  .navbar {
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    flex-basis: auto;
+    margin-bottom: 0;
+  }
+
+  .nav-links,
+  .search-signup {
+    width: auto;
+    margin-top: 0;
+  }
+
+  .search {
+    flex: none;
+  }
+}
